@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPA LOG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .mackro {
+            max-width: 1000px;
+            width: 100%;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .form-group label {
+            flex: 1 1 100px;
+            margin-right: 10px;
+        }
+
+        .form-group input, .form-group textarea {
+            flex: 3 1 200px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .form-group {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .form-group label, .form-group input, .form-group textarea {
+                flex: 1 1 100%;
+                margin-right: 0;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mackro">
+        <h1>RPA LOG</h1>
+        <h1>RFLY INNOVATION</h1>
+        <form method="post" action="value.php">
+            <div class="form-group">
+                <label for="PHASE">PHASE</label>
+                <input required type="text" id="PHASE" name="PHASE">
+            </div>
+            <div class="form-group">
+                <label for="date">DATE</label>
+                <input required type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="VENUE/ALT">VENUE/ALT</label>
+                <input required type="text" id="VENUE/ALT" name="VENUE/ALT">
+            </div>
+            <div class="form-group">
+                <label for="TEMP/WIND">TEMP/WIND</label>
+                <input required type="text" id="TEMP/WIND" name="TEMP/WIND">
+            </div>
+            <div class="form-group">
+                <label for="SORTIE_NO">SORTIE NO</label>
+                <input required type="text" id="SORTIE_NO" name="SORTIE_NO">
+            </div>
+            <div class="form-group">
+                <label for="DURATION/PLANNED">DURATION PLANNED</label>
+                <input required type="text" id="DURATION/PLANNED" name="DURATION/PLANNED">
+            </div>
+            <div class="form-group">
+                <label for="AIRCRAFT">AIRCRAFT</label>
+                <input required type="text" id="AIRCRAFT" name="AIRCRAFT">
+            </div>
+            <div class="form-group">
+                <label for="AUW">AUW</label>
+                <input required type="text" id="AUW" name="AUW">
+            </div>
+            <div class="form-group">
+                <label for="T/O">T/O</label>
+                <input required type="text" id="T/O" name="T/O">
+            </div>
+            <div class="form-group">
+                <label for="POS">POS</label>
+                <input required type="text" id="POS" name="POS">
+            </div>
+            <div class="form-group">
+                <label for="CATEGORY">CATEGORY</label>
+                <input required type="text" id="CATEGORY" name="CATEGORY">
+            </div>
+            <div class="form-group">
+                <label for="TYPE">TYPE</label>
+                <input required type="text" id="TYPE" name="TYPE">
+            </div>
+            <div class="form-group">
+                <label for="BATTERY">BATTERY</label>
+                <input required type="text" id="BATTERY" name="BATTERY">
+            </div>
+            <div class="form-group">
+                <label for="CHARHE">CHARGE</label>
+                <input required type="text" id="CHARHE" name="CHARHE">
+            </div>
+            <div class="form-group">
+                <label for="INT">INT</label>
+                <input type="text" id="INT" name="INT">
+            </div>
+            <div class="form-group">
+                <label for="FINAL">FINAL</label>
+                <input type="text" id="FINAL" name="FINAL">
+            </div>
+            <div class="form-group">
+                <label for="DURATION">DURATION</label>
+                <input required type="text" id="DURATION" name="DURATION">
+            </div>
+            <div class="form-group">
+                <label for="PILOT">PILOT</label>
+                <input required type="text" id="PILOT" name="PILOT">
+            </div>
+            <div class="form-group">
+                <label for="OBSERVER">OBSERVER</label>
+                <input required type="text" id="OBSERVER" name="OBSERVER">
+            </div>
+            <div class="form-group">
+                <label for="PAYLOADS">PAYLOADS</label>
+                <input required type="text" id="PAYLOADS" name="PAYLOADS">
+            </div>
+            <div class="form-group">
+                <label for="CONTROLLER/CHARGER_LEVEL">CONTROLLER/CHARGER LEVEL</label>
+                <input required type="text" id="CONTROLLER/CHARGER_LEVEL" name="CONTROLLER/CHARGER_LEVEL">
+            </div>
+            <div class="form-group">
+                <label for="LAPTOP/CHARGER_LEVEL">LAPTOP/CHARGER LVL</label>
+                <input required type="text" id="LAPTOP/CHARGER_LEVEL" name="LAPTOP/CHARGER_LEVEL">
+            </div>
+            <div class="form-group">
+                <label for="FIRMWARE">FIRMWARE</label>
+                <input required type="text" id="FIRMWARE" name="FIRMWARE">
+            </div>
+            <div class="form-group">
+                <label for="PRODUCT_ID">PRODUCT ID</label>
+                <input required type="text" id="PRODUCT_ID" name="PRODUCT_ID">
+            </div>
+            <div class="form-group">
+                <label for="work">ANY WORK/CHANGES TO AIRCRAFT AT SITE OR OBSERVATIONS DURING PREFLIGHT</label>
+                <textarea id="work" name="work" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="OBSERVERVATIONS">OBSERVATIONS/INFERENCES</label>
+                <textarea id="OBSERVERVATIONS" name="OBSERVERVATIONS" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+     </div>
+     <form method="post" action="filter.php">
+         <input type="submit" value="Filter">
+     </form>
+
+</body>
+</html>
